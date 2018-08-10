@@ -6,7 +6,7 @@ i.fas.fa-dice {
     color: #476682;
 }
 nav.navbar.navbar-expand-lg.navbar-light{
-    background: #fff159;/*#87BFAC*/
+    background: #87BFAC;/*#fff159*/
 }
 h3 {
     color: gray;
@@ -46,10 +46,6 @@ a.cont-img {
     width: 50%;
 }
 
-/* .new-products {
-    padding: 1rem 1rem;
-} */
-
 a.product-title {
     color: rgb(143, 143, 143);
 }
@@ -64,7 +60,6 @@ a.product-title {
     border: 1px solid rgb(212, 212, 212);
     transform: scale(1.05);
 }
-
 
 p.price {
     font-size: 20px;
