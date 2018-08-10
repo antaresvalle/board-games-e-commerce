@@ -1,11 +1,10 @@
 $('.carousel').carousel()
 
-
 Vue.component('product', {
     props: ['image', 'title', 'price', 'id'],
     template: `
     <div class="col-sm-3 new-products" v-on:click="showDetails(id)">
-        <div class="card">
+        <div class="card shadow p-3 mb-5 bg-white rounded">
             <a href="#" data-toggle="modal" data-target="#exampleModal" class="cont-img"><img :src="image" :alt="title" class="product-img"></a>
             <p class="price">$ {{ price }}</p>
             <a href="#" data-toggle="modal" data-target="#exampleModal" class="product-title"><p class="title"> {{ title }} </p></a>
@@ -29,10 +28,11 @@ Vue.component('product', {
     }
 })
 
-var allProducts = new Vue({
-    el: '#all-products',
+var app = new Vue({
+    el: '#app',
     data: {
         products: [],
+        currentRoute: window.location.pathname,
     },
     methods: {
         loadProducts: function (endpoint) {
@@ -46,11 +46,11 @@ var allProducts = new Vue({
                 this.products = response.results;
             });
         }
-    }
+    },
+    
 })
 
 const displayModal = (data) => {
-
     let image = data.pictures[0].url;
     let modalItemTitle = data.title;
     let modalPrice = data.price;
@@ -115,27 +115,4 @@ const clean = () => {
     })
 }
 
-
-
-// allProducts.loadProducts();
-// allProducts.newP();
-// allProducts.showDetails("MLA673577112");
-
-// $(document).ready(() => {
-
-// // https://api.mercadolibre.com/items/${item_id}
-
-// const showProducts = (item_id) => {
-//     $.ajax({
-//         url: `https://api.mercadolibre.com/sites/MLA/search?q=juegos/mesa/#menu=categories`,
-//         type: 'GET',
-//         crossDomain: true,
-//         datatype: 'json',
-//     }).done((response) => {
-//         console.log(response.results);
-//     });
-// }
-
-// showProducts('MLM590492715');
-// showProducts();
-// })
+app.loadProducts('/juegos/');
