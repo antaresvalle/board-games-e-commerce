@@ -2,7 +2,7 @@
 
 E-Commerce / SPA que integra la API de Mercado Libre y Paypal, utilizando JavaScript Vanilla, jQuery y Vue.js.
 
-![Maquetación](/assets/images/preview.png)
+![Preview](/assets/images/preview.png)
 
 ## Problemática
 Este proyecto se desarrolló ante el requerimiento de crear un E-Commerce SPA.
@@ -25,8 +25,6 @@ Tecnologías:
 * Bootstrap
 
 #### Maquetación
-
-![Maquetación](/assets/images/maquetacion.png)
 
 Bloques para maquetación
 
