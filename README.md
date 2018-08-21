@@ -29,3 +29,6 @@ Tecnologías:
 Bloques para maquetación
 
 ![Maquetación](/assets/images/bloques-maquetacion.png)
+
+
+## Desarrollado para [Laboratoria](http://laboratoria.la)
