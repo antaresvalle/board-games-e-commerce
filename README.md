@@ -28,7 +28,7 @@ Tecnologías:
 
 Bloques para maquetación
 
-![Maquetación](/assets/images/bloques-maquetacion.png)
+![Maquetación](https://user-images.githubusercontent.com/37418496/45055625-fa215f80-b055-11e8-9a6f-a5b1005d69a3.png)
 
 
 ## Desarrollado para [Laboratoria](http://laboratoria.la)
